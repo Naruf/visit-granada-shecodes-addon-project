@@ -6,7 +6,7 @@ body {
 .container {
   display: flex;
   margin: auto;
-  width: 100%;
+  max-width: 2500px;
 }
 .hero-container {
   width: 100%;
@@ -24,19 +24,19 @@ body {
 
 .hero-container h1 {
   font-size: 96px;
-  font-weight: 700px;
-  padding: 16px 8px;
-  margin: 10px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 .hero-container h2 {
   font-size: 40px;
-  font-weight: 400px;
-  padding: 8px;
-  margin: 8px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .hero-container h3 {
   font-size: 24px;
-  font-weight: 900px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
 }
 .hero-container button {
   border: 1px solid transparent;
@@ -45,7 +45,7 @@ body {
 }
 .hero-container a {
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   color: black;
   text-decoration: none;
   letter-spacing: 3px;
@@ -73,6 +73,6 @@ footer {
     font-size: 10px;
   }
   .hero-container a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
