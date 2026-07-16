@@ -65,7 +65,6 @@ body {
   margin: auto;
 }
 footer {
-  text-align: center;
   background-image:
     linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
     url(/images/Alhambra-Granada-1.jpg);
@@ -73,7 +72,7 @@ footer {
   background-position: center;
   background-repeat: none;
   color: white;
-  padding: 100px 20px 50px 20px;
+  padding: 100px 30px;
 }
 .about {
   display: grid;
@@ -85,23 +84,19 @@ footer {
 .about th {
   font-size: 20px;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 .about td {
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-coder p {
-  font-size: 18px;
-  padding: 30px;
-  margin: 30px;
-}
-.footer-coder a {
-  color: rgb(72, 215, 223);
+.about a {
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-container {
   display: flex;
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
 }
 
