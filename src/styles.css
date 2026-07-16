@@ -4,11 +4,13 @@ body {
   font-style: normal;
 }
 .container {
-  display: flex;
+  display: block;
+  max-width: 2000px;
   margin: auto;
-  max-width: 2500px;
 }
 .hero-container {
+  display: block;
+  margin: auto;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -19,7 +21,7 @@ body {
   background-position: center;
   background-repeat: none;
   color: white;
-  padding: 300px 150px;
+  padding: 300px 0;
 }
 
 .hero-container h1 {
@@ -50,18 +52,64 @@ body {
   text-decoration: none;
   letter-spacing: 3px;
 }
-footer {
-  color: black;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  text-align: center;
+.visit-granada {
+  display: block;
+  margin: auto;
 }
-@media (max-width: 800px) {
+.favourite-places {
+  display: block;
+  margin: auto;
+}
+.photos {
+  display: block;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
+    url(/images/Alhambra-Granada-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  padding: 100px 20px 50px 20px;
+}
+.about {
+  display: grid;
+  grid-template-columns: 3fr 4fr 4fr;
+  grid-gap: 40px;
+  text-align: left;
+  line-height: 1.5;
+}
+.about th {
+  font-size: 20px;
+  font-weight: 700;
+}
+.about td {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-coder p {
+  font-size: 18px;
+  padding: 30px;
+  margin: 30px;
+}
+.footer-coder a {
+  color: rgb(72, 215, 223);
+}
+.footer-container {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
   .hero-container {
-    padding: 100px 10px;
+    padding: 100px 0px;
+    margin: auto;
+    display: block;
   }
   .hero-container h1 {
     font-size: 55px;
