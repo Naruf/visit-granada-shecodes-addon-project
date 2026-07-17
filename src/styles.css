@@ -1,3 +1,24 @@
+.about {
+  display: grid;
+  grid-template-columns: 3fr 4fr 4fr;
+  grid-gap: 40px;
+  text-align: left;
+  line-height: 1.5;
+}
+.about th {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.about td {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 body.container {
   display: block;
   max-width: 2000px;
@@ -5,6 +26,138 @@ body.container {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.card-container {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 0;
+}
+.card {
+  display: block;
+  margin: auto;
+  max-width: 370px;
+  background-color: white;
+  padding-bottom: 25px;
+  border: 3px solid transparent;
+}
+.card:hover {
+  cursor: pointer;
+  border: 3px solid rgb(16, 17, 17);
+}
+.card-body {
+  padding: 0 30px 30px;
+}
+.card-images {
+  display: grid;
+  grid-template-columns: repeat(2, 185px);
+  grid-gap: 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+.card-images img {
+  width: 185px;
+  height: 185px;
+  object-fit: cover; /* fills the box, crops excess, never stretches */
+  object-position: center; /* change to e.g. "top" if the best part gets cropped out */
+  display: block;
+}
+.card-images iframe {
+  width: 185px;
+  height: 185px;
+  object-fit: cover; /* fills the box, crops excess, never stretches */
+  object-position: center; /* change to e.g. "top" if the best part gets cropped out */
+  display: block;
+}
+
+.card-body h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.card-body h6 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.card-body p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 70%;
+}
+.card button {
+  display: block;
+  margin: auto;
+  padding: 16px 95px;
+  background-color: rgba(70, 44, 178, 1);
+}
+.card button a {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer {
+  background-image:
+    linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
+    url(/images/Alhambra-Granada-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  padding: 100px 30px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.gallery {
+  padding: 20px 20px 60px;
+}
+.gallery-heading {
+  text-align: center;
+  padding: 50px 20px;
+}
+.gallery h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.gallery h4 {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 30%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.favourite-places {
+  display: block;
+  margin: auto;
+  /* padding: 80px 50px 150px 50px; */
+  background-color: rgba(248, 248, 248, 1);
+  padding: 20px 20px 60px;
+}
+.favourite-places-heading {
+  text-align: center;
+  padding: 50px 20px;
+}
+.favourite-places-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.favourite-places-heading h4 {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 30%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .hero-container {
   display: block;
@@ -42,6 +195,11 @@ body.container {
   border: 1px solid transparent;
   padding: 18px 25px;
   margin-top: 50px;
+  border: 3px solid transparent;
+}
+.hero-container button:hover {
+  cursor: pointer;
+  border: 3px solid rgb(16, 17, 17);
 }
 .hero-container a {
   font-size: 14px;
@@ -49,6 +207,42 @@ body.container {
   color: black;
   text-decoration: none;
   letter-spacing: 3px;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* your margin */
+}
+.img-container img {
+  max-width: 560px;
+  max-height: 560px;
+  display: block;
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 30px;
+  width: fit-content; /* shrinks grid to exactly fit the 3 columns */
+  margin: 0 auto; /* now this works, since width isn't 100% */
+}
+.photo {
+  width: 350px;
+  height: 350px;
+  overflow: hidden; /* clips anything outside the box */
+  border: 3px solid transparent;
+}
+.photo:hover {
+  cursor: pointer;
+  border: 3px solid rgb(16, 17, 17);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the box, crops excess, never stretches */
+  object-position: center; /* change to e.g. "top" if the best part gets cropped out */
+  display: block;
 }
 .visit-container {
   display: grid;
@@ -58,17 +252,6 @@ body.container {
   padding: 130px 50px;
   margin: auto;
   line-height: 1.5;
-}
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px; /* your margin */
-}
-.img-container img {
-  max-width: 560px;
-  max-height: 560px;
-  display: block;
 }
 .visit-container img {
   display: flex;
@@ -92,160 +275,43 @@ body.container {
   font-weight: 400;
   opacity: 70%;
 }
-.favourite-places {
-  display: block;
-  margin: auto;
-  /* padding: 80px 50px 150px 50px; */
-  background-color: rgba(248, 248, 248, 1);
-  padding: 20px 20px 60px;
-}
-.favourite-places-heading {
-  text-align: center;
-  padding: 50px 20px;
-}
-.favourite-places-heading h1 {
-  font-size: 48px;
-  font-weight: 700;
-}
-.favourite-places-heading h4 {
-  font-size: 16px;
-  font-weight: 700;
-  opacity: 30%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-.card-container {
-  display: block;
-  margin: auto;
-  max-width: 1200px;
-}
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
-  margin: 0;
-}
-.card {
-  display: block;
-  margin: auto;
-  max-width: 370px;
-  background-color: white;
-  padding-bottom: 25px;
-}
-.card-body {
-  padding: 0 30px 30px;
-}
-.card-images {
-  display: grid;
-  grid-template-columns: repeat(2, 185px);
-  grid-gap: 0;
-}
-
-.card-body h4 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.card-body h6 {
-  font-size: 15px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-.card-body p {
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 70%;
-}
-.card button {
-  display: block;
-  margin: auto;
-  padding: 16px 95px;
-  background-color: rgba(70, 44, 178, 1);
-}
-.card button a {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.gallery {
-  padding: 20px 20px 60px;
-}
-.gallery-heading {
-  text-align: center;
-  padding: 50px 20px;
-}
-.gallery h1 {
-  font-size: 48px;
-  font-weight: 700;
-}
-.gallery h4 {
-  font-size: 16px;
-  font-weight: 700;
-  opacity: 30%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-.photos {
-  display: grid;
-  grid-template-columns: repeat(3, 360px);
-  gap: 30px;
-  width: fit-content; /* shrinks grid to exactly fit the 3 columns */
-  margin: 0 auto; /* now this works, since width isn't 100% */
-}
-.photo {
-  width: 360px;
-  height: 360px;
-  overflow: hidden; /* clips anything outside the box */
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* fills the box, crops excess, never stretches */
-  object-position: center; /* change to e.g. "top" if the best part gets cropped out */
-  display: block;
-}
-
-footer {
-  background-image:
-    linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
-    url(/images/Alhambra-Granada-1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: none;
-  color: white;
-  padding: 100px 30px;
-}
-.about {
-  display: grid;
-  grid-template-columns: 3fr 4fr 4fr;
-  grid-gap: 40px;
-  text-align: left;
-  line-height: 1.5;
-}
-.about th {
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-.about td {
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
-}
-.about a {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-container {
-  max-width: 1200px;
-  margin: auto;
-}
 
 @media (max-width: 1200px) {
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-col {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+  }
+  .card-images {
+    display: block;
+    margin: auto;
+    max-width: 185px;
+    padding-top: 20px;
+  }
+  .cards {
+    display: block;
+    margin: auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .favourite-places {
+    padding-top: 0px;
+  }
+  footer {
+    padding: 50px 30px;
+  }
+  .gallery {
+    padding: 0px 10px 50px;
+    margin: auto;
+  }
   .hero-container {
     padding: 100px 0px 140px;
     margin: auto;
@@ -263,21 +329,6 @@ footer {
   .hero-container a {
     font-size: 12px;
   }
-  .visit-container {
-    grid-template-columns: 1fr;
-    padding: 50px 20px;
-    grid-gap: 10px;
-  }
-  .img-container img {
-    display: block;
-    margin: auto;
-    max-width: 300px;
-    max-height: 300px;
-  }
-  .visit-container h4 {
-    margin-bottom: 30px;
-    margin-top: 0;
-  }
   .info {
     display: block;
     margin: auto;
@@ -285,38 +336,27 @@ footer {
     text-justify: center;
     padding: 30px 30px 0px 30px;
   }
-  .card-images {
-    display: block;
-    margin: auto;
-    max-width: 185px;
+  .info p {
     padding-top: 20px;
   }
-  .cards {
+  .img-container img {
     display: block;
     margin: auto;
+    max-width: 300px;
+    max-height: 300px;
   }
   .photos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  .cards {
-    display: grid;
+  .visit-container {
     grid-template-columns: 1fr;
-    gap: 30px;
+    padding: 50px 20px;
+    grid-gap: 10px;
   }
-  .gallery {
-    padding: 10px 10px 40px;
-    margin: auto;
-  }
-  .about {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .about-col {
-    display: block;
-    max-width: 400px;
-    margin: auto;
-    padding: 0 20px 0 20px;
+  .visit-container h4 {
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 }
