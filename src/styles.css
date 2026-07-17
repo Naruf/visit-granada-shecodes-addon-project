@@ -97,7 +97,7 @@ body.container {
   margin: auto;
   /* padding: 80px 50px 150px 50px; */
   background-color: rgba(248, 248, 248, 1);
-  padding: 50px 20px;
+  padding: 20px 20px 60px;
 }
 .favourite-places-heading {
   text-align: center;
@@ -172,11 +172,11 @@ body.container {
 }
 
 .gallery {
-  padding: 100px 20px;
+  padding: 20px 20px 60px;
 }
 .gallery-heading {
   text-align: center;
-  padding: 10px 20px 50px;
+  padding: 50px 20px;
 }
 .gallery h1 {
   font-size: 48px;
@@ -247,7 +247,7 @@ footer {
 
 @media (max-width: 1200px) {
   .hero-container {
-    padding: 100px 0px;
+    padding: 100px 0px 140px;
     margin: auto;
     display: block;
   }
@@ -265,7 +265,8 @@ footer {
   }
   .visit-container {
     grid-template-columns: 1fr;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    grid-gap: 10px;
   }
   .img-container img {
     display: block;
@@ -273,12 +274,16 @@ footer {
     max-width: 300px;
     max-height: 300px;
   }
+  .visit-container h4 {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
   .info {
     display: block;
     margin: auto;
     text-align: center;
-    justify-content: center;
-    padding: 20px 50px;
+    text-justify: center;
+    padding: 30px 30px 0px 30px;
   }
   .card-images {
     display: block;
@@ -301,7 +306,7 @@ footer {
     gap: 30px;
   }
   .gallery {
-    padding: 80px 10px 80px;
+    padding: 10px 10px 40px;
     margin: auto;
   }
   .about {
@@ -313,8 +318,5 @@ footer {
     max-width: 400px;
     margin: auto;
     padding: 0 20px 0 20px;
-  }
-  .visit-container h4 {
-    margin-bottom: 30px;
   }
 }
