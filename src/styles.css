@@ -18,7 +18,9 @@
 .about a {
   color: rgba(255, 255, 255, 0.6);
 }
-
+body {
+  background-color: rgb(39, 32, 68);
+}
 body.container {
   display: block;
   max-width: 2000px;
@@ -47,7 +49,6 @@ body.container {
   border: 3px solid transparent;
 }
 .card:hover {
-  cursor: pointer;
   border: 3px solid rgb(16, 17, 17);
 }
 .card-body {
@@ -104,10 +105,31 @@ body.container {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.favourite-places {
+  display: block;
+  margin: auto;
+  /* padding: 80px 50px 150px 50px; */
+  background-color: rgb(238, 236, 236);
+  padding: 20px 20px 100px;
+}
+.favourite-places-heading {
+  text-align: center;
+  padding: 50px 20px;
+}
+.favourite-places-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.favourite-places-heading h4 {
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 30%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 footer {
   background-image:
-    linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
+    linear-gradient(rgba(39, 32, 68, 0.8), rgba(39, 32, 68, 0.8)),
     url(/images/Alhambra-Granada-1.jpg);
   background-size: cover;
   background-position: center;
@@ -120,39 +142,20 @@ footer {
   margin: auto;
 }
 .gallery {
-  padding: 20px 20px 60px;
+  padding: 20px 20px 100px;
 }
 .gallery-heading {
   text-align: center;
   padding: 50px 20px;
+}
+.gallery-section {
+  background-color: white;
 }
 .gallery h1 {
   font-size: 48px;
   font-weight: 700;
 }
 .gallery h4 {
-  font-size: 16px;
-  font-weight: 700;
-  opacity: 30%;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-.favourite-places {
-  display: block;
-  margin: auto;
-  /* padding: 80px 50px 150px 50px; */
-  background-color: rgba(248, 248, 248, 1);
-  padding: 20px 20px 60px;
-}
-.favourite-places-heading {
-  text-align: center;
-  padding: 50px 20px;
-}
-.favourite-places-heading h1 {
-  font-size: 48px;
-  font-weight: 700;
-}
-.favourite-places-heading h4 {
   font-size: 16px;
   font-weight: 700;
   opacity: 30%;
@@ -233,7 +236,6 @@ footer {
   border: 3px solid transparent;
 }
 .photo:hover {
-  cursor: pointer;
   border: 3px solid rgb(16, 17, 17);
 }
 
@@ -243,6 +245,9 @@ footer {
   object-fit: cover; /* fills the box, crops excess, never stretches */
   object-position: center; /* change to e.g. "top" if the best part gets cropped out */
   display: block;
+}
+.visit {
+  background-color: white;
 }
 .visit-container {
   display: grid;
@@ -303,13 +308,13 @@ footer {
     gap: 30px;
   }
   .favourite-places {
-    padding-top: 0px;
+    padding: 0px 20px 80px;
   }
   footer {
     padding: 50px 30px;
   }
   .gallery {
-    padding: 0px 10px 50px;
+    padding: 0px 10px 70px;
     margin: auto;
   }
   .hero-container {
